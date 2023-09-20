@@ -14,8 +14,8 @@ const GenerateOTP = () => {
       const response = await OtpService.getOTP(userId);
       const data = response.data;
 
-      setOTP(data.otp);
-      setRemainingTime(data.rem_time);
+      setOTP(data.token);
+      setRemainingTime(data.remTime);
 
       setTimeout(() => {
         setIsButtonDisabled(false);
