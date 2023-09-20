@@ -10,7 +10,6 @@ const GenerateOTP = () => {
 
   const generateOTP = async () => {
     try {
-      console.log("clicked");
       setIsButtonDisabled(true);
       const response = await OtpService.getOTP(userId);
       const data = response.data;
